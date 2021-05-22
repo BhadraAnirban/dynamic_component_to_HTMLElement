@@ -24,7 +24,7 @@ In the app.nmodule-
 ```
 entryComponents: [SignatureControlComponent]
 ```
-### In the component (I have used EditTemplateComponent) where you are going to create the component and add to the HTML element.
+### In the main component (I have used EditTemplateComponent) where you are going to create the component and add to the HTML element.
 
 Inject ComponentFactoryResolver, ViewContainerRef, Renderer2 using the constructor.
 ```
