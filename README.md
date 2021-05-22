@@ -45,7 +45,7 @@ ngAfterViewChecked() {
       {
         this.isElementsRendered = true;
         elements.forEach(element => {
-          this.ModifySignature(element);
+          this.CreateSignatureComponent(element);
         })
       }
     }   
@@ -53,7 +53,7 @@ ngAfterViewChecked() {
 ```
 Finally create the instance of the component and append to the element.
 ```
-ModifySignature(element: HTMLElement){    
+CreateSignatureComponent(element: HTMLElement){    
     const componentFactory = this.componentFactoryResolver.resolveComponentFactory(SignatureControlComponent);    
     let componentInstance = this.viewContainerRef.createComponent(componentFactory);
     const loaderComponentElement = componentInstance.location.nativeElement;
